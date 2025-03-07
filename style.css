@@ -1,0 +1,288 @@
+body {
+    background-color: rgb(246 251 255);
+}
+
+.container-box {
+    background-color: white;
+    border-color: #e5e7eb;
+    border: 0.5px solid;
+    border-radius: .5rem;
+}
+
+.container-text {
+    font-size: 1.25rem;
+}
+
+.waving-hand {
+    display: inline-block;
+    transform-origin: bottom center;
+    animation: wave 4s ease-in-out infinite;
+    animation-iteration-count: infinite;
+}
+
+.external-link {
+    display: inline;
+    right: 0.25rem;
+    top: -6px;
+    position: relative;
+    /* color:black !important;
+            fill: black !important; */
+    filter: invert(1);
+}
+
+.landing-text {
+    height: 30vh;
+    margin-top: 35vh;
+    margin-bottom: 35vh;
+}
+
+.banner-text {
+    color: white;
+}
+
+.banner_bg-image {
+    /* background-image: linear-gradient(1turn, #121212, 45%, transparent, 96%, #12121255), url("assets/pexels-photo-259411.jpeg"); */
+    background-image: linear-gradient(1turn, #121212, 45%, transparent, 96%, #12121255), url("assets/image-from-rawpixel-id-3337865-jpeg.jpg");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+a,
+a:hover,
+a:visited {
+    color: black;
+}
+
+a:hover {
+    background-color: darksalmon;
+    color: black;
+    border-radius: 7px;
+}
+
+.text-background-shadow {
+    background-color: bisque;
+    border-radius: 7px;
+}
+
+.box-background-shadow {
+    box-shadow: bisque 0.75vw 0.75vw;
+}
+
+.text-background-shadow-honeydew {
+    background-color: honeydew;
+    border-radius: 7px;
+}
+
+.dropdown-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dropdown-left {
+    text-align: left;
+    flex: 1;
+}
+
+.dropdown-right {
+    text-align: right;
+    flex: 1;
+}
+
+.dropdown-btn {
+    width: 2rem;
+    height: 2rem;
+
+}
+
+#website_preview {
+    height: 50vh;
+    width: 100%;
+    border: none;
+}
+
+@keyframes wave {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    5% {
+        transform: rotate(14deg);
+    }
+
+    10% {
+        transform: rotate(-8deg);
+    }
+
+    13% {
+        transform: rotate(14deg);
+    }
+
+    16% {
+        transform: rotate(-4deg);
+    }
+
+    20% {
+        transform: rotate(10deg);
+    }
+
+    33% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+/* Kanit Font */
+.kanit-thin {
+    font-family: "Kanit", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.kanit-extralight {
+    font-family: "Kanit", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.kanit-light {
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.kanit-regular {
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.kanit-medium {
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.kanit-semibold {
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.kanit-bold {
+    font-family: "Kanit", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.kanit-extrabold {
+    font-family: "Kanit", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.kanit-black {
+    font-family: "Kanit", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.kanit-thin-italic {
+    font-family: "Kanit", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.kanit-extralight-italic {
+    font-family: "Kanit", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+}
+
+.kanit-light-italic {
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.kanit-regular-italic {
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.kanit-medium-italic {
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.kanit-semibold-italic {
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.kanit-bold-italic {
+    font-family: "Kanit", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.kanit-extrabold-italic {
+    font-family: "Kanit", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.kanit-black-italic {
+    font-family: "Kanit", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+}
+
+/* Monospaced */
+
+.space-mono-regular {
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .space-mono-bold {
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .space-mono-regular-italic {
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .space-mono-bold-italic {
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+
+/* Animation Fade */
+.fade-in-out {
+    opacity: 0;
+    transform: translateY(20px);
+    /* Optional: Slight upward movement */
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.fade-in-out.visible {
+    opacity: 1;
+    transform: translateY(0);
+}

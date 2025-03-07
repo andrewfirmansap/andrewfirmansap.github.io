@@ -8,272 +8,15 @@
     <link rel="icon" href="img/headshot.png" type="image/x-icon" />
     <!-- Bootstrap 4 CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <style>
-        body {
-            background-color: rgb(246 251 255);
-        }
-
-        .container-box {
-            background-color: white;
-            border-color: #e5e7eb;
-            border: 0.5px solid;
-            border-radius: .5rem;
-        }
-
-        .container-text {
-            font-size: 1.25rem;
-        }
-
-        .waving-hand {
-            display: inline-block;
-            transform-origin: bottom center;
-            animation: wave 4s ease-in-out infinite;
-            animation-iteration-count: infinite;
-        }
-
-        .external-link {
-            display: inline;
-            right: 0.25rem;
-            top: -6px;
-            position: relative;
-            /* color:black !important;
-            fill: black !important; */
-            filter: invert(1);
-        }
-
-        .landing-text {
-            height: 30vh;
-            margin-top: 35vh;
-            margin-bottom: 35vh;
-        }
-
-        .banner-text {
-            color: white;
-        }
-
-        .banner_bg-image {
-            /* background-image: linear-gradient(1turn, #121212, 45%, transparent, 96%, #12121255), url("assets/pexels-photo-259411.jpeg"); */
-            background-image: linear-gradient(1turn, #121212, 45%, transparent, 96%, #12121255), url("assets/image-from-rawpixel-id-3337865-jpeg.jpg");
-            height: 100vh;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-
-        }
-
-        a,
-        a:hover,
-        a:visited {
-            color: black;
-        }
-
-        a:hover {
-            background-color: darksalmon;
-            color: black;
-            border-radius: 7px;
-        }
-
-        .text-background-shadow {
-            background-color: bisque;
-            border-radius: 7px;
-        }
-
-        .box-background-shadow {
-            box-shadow: bisque 0.75vw 0.75vw;
-        }
-
-        .text-background-shadow-honeydew {
-            background-color: honeydew;
-            border-radius: 7px;
-        }
-
-        .dropdown-box {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .dropdown-left {
-            text-align: left;
-            flex: 1;
-        }
-
-        .dropdown-right {
-            text-align: right;
-            flex: 1;
-        }
-
-        .dropdown-btn {
-            width: 2rem;
-            height: 2rem;
-
-        }
-
-        #website_preview {
-            height: 50vh;
-            width: 100%;
-            border: none;
-        }
-
-        @keyframes wave {
-            0% {
-                transform: rotate(0deg);
-            }
-
-            5% {
-                transform: rotate(14deg);
-            }
-
-            10% {
-                transform: rotate(-8deg);
-            }
-
-            13% {
-                transform: rotate(14deg);
-            }
-
-            16% {
-                transform: rotate(-4deg);
-            }
-
-            20% {
-                transform: rotate(10deg);
-            }
-
-            33% {
-                transform: rotate(0deg);
-            }
-
-            100% {
-                transform: rotate(0deg);
-            }
-        }
-
-        /* Kanit Font */
-        .kanit-thin {
-            font-family: "Kanit", sans-serif;
-            font-weight: 100;
-            font-style: normal;
-        }
-
-        .kanit-extralight {
-            font-family: "Kanit", sans-serif;
-            font-weight: 200;
-            font-style: normal;
-        }
-
-        .kanit-light {
-            font-family: "Kanit", sans-serif;
-            font-weight: 300;
-            font-style: normal;
-        }
-
-        .kanit-regular {
-            font-family: "Kanit", sans-serif;
-            font-weight: 400;
-            font-style: normal;
-        }
-
-        .kanit-medium {
-            font-family: "Kanit", sans-serif;
-            font-weight: 500;
-            font-style: normal;
-        }
-
-        .kanit-semibold {
-            font-family: "Kanit", sans-serif;
-            font-weight: 600;
-            font-style: normal;
-        }
-
-        .kanit-bold {
-            font-family: "Kanit", sans-serif;
-            font-weight: 700;
-            font-style: normal;
-        }
-
-        .kanit-extrabold {
-            font-family: "Kanit", sans-serif;
-            font-weight: 800;
-            font-style: normal;
-        }
-
-        .kanit-black {
-            font-family: "Kanit", sans-serif;
-            font-weight: 900;
-            font-style: normal;
-        }
-
-        .kanit-thin-italic {
-            font-family: "Kanit", sans-serif;
-            font-weight: 100;
-            font-style: italic;
-        }
-
-        .kanit-extralight-italic {
-            font-family: "Kanit", sans-serif;
-            font-weight: 200;
-            font-style: italic;
-        }
-
-        .kanit-light-italic {
-            font-family: "Kanit", sans-serif;
-            font-weight: 300;
-            font-style: italic;
-        }
-
-        .kanit-regular-italic {
-            font-family: "Kanit", sans-serif;
-            font-weight: 400;
-            font-style: italic;
-        }
-
-        .kanit-medium-italic {
-            font-family: "Kanit", sans-serif;
-            font-weight: 500;
-            font-style: italic;
-        }
-
-        .kanit-semibold-italic {
-            font-family: "Kanit", sans-serif;
-            font-weight: 600;
-            font-style: italic;
-        }
-
-        .kanit-bold-italic {
-            font-family: "Kanit", sans-serif;
-            font-weight: 700;
-            font-style: italic;
-        }
-
-        .kanit-extrabold-italic {
-            font-family: "Kanit", sans-serif;
-            font-weight: 800;
-            font-style: italic;
-        }
-
-        .kanit-black-italic {
-            font-family: "Kanit", sans-serif;
-            font-weight: 900;
-            font-style: italic;
-        }
-
-        /* Animation Fade */
-        .fade-in-out {
-            opacity: 0;
-            transform: translateY(20px);
-            /* Optional: Slight upward movement */
-            transition: opacity 0.5s ease-out, transform 0.5s ease-out;
-        }
-
-        .fade-in-out.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    </style>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
     <!-- Kanit Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Monospaced -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
@@ -283,18 +26,18 @@
 
     <div class="container-fluid">
         <!-- Introduction -->
-        <div class="row kanit-light banner_bg-image">
+        <div class="row space-mono-regular banner_bg-image">
             <div class="col-sm-12 col-md-8 mx-auto landing-text">
-                <h4 class="kanit-bold "> <span class="text-background-shadow">Hi there!</span> </h4>
-                <h1 class="banner-text">I'm <i><b>Andrew Firman Saputra,</b></i><span class="waving-hand">👋</span>
+                <h4 class="space-mono-bold "> <span class="text-background-shadow">Hi there!</span> </h4>
+                <h1 class="banner-text">I'm [<b>Andrew Firman Saputra</b>],<span class="waving-hand">👋</span>
                 </h1>
-                <h2 class="text-center banner-text"> a <i><u>software engineer</u></i></h2>
+                <h2 class="text-center banner-text"> a [Software Engineer]</h2>
             </div>
         </div>
         <!-- About -->
-        <div class="row kanit-light fade-in-out">
+        <div class="row space-mono-regular fade-in-out">
             <div class="col-11 col-md-8 container-box mx-auto mt-5 px-5 py-3">
-                <p class="container-text kanit-light">I hold a
+                <p class="container-text space-mono-regular">I hold a
                     <a href="assets/Andrew Firman Saputra - Degree.pdf" class="text-background-shadow" target="_blank">
                         Computer Science degree
                     </a> <img class="external-link" src="assets/external-link.svg" width="16" height="16" alt=""
@@ -305,7 +48,7 @@
                         aria-hidden="true">
                     , where I learned various technologies and software development concepts
                 </p>
-                <p class="container-text kanit-light">I specialize in building and optimizing <span
+                <p class="container-text space-mono-regular">I specialize in building and optimizing <span
                         class="text-background-shadow">web applications</span>,
                     with experience in <span class="text-background-shadow">PHP</span>, <span
                         class="text-background-shadow">CodeIgniter</span>, and <span
@@ -332,21 +75,21 @@
 
 
         <!-- Experience -->
-        <div class="row kanit-light fade-in-out">
+        <div class="row space-mono-regular fade-in-out">
             <div class="col-11 col-md-8 container-box mx-auto mt-5 px-5 py-3">
-                <h1 class="kanit-bold">My Experience 🧑‍💻</h1>
+                <h1 class="space-mono-bold">My Experience 🧑‍💻</h1>
                 <div class="row">
                     <div class="col-12 col-md-6">
                         <!-- Brighton -->
                         <div class="row">
                             <div class="col-11">
                                 <button class="dropdown-box container-box py-3 mt-3 col-12" id="brighton_exp">
-                                    <h5 class="dropdown-left kanit-regular">Brighton Real Estate - <span
-                                            class="kanit-light-italic">Back End Developer</span></h5>
+                                    <h5 class="dropdown-left space-mono-regular">Brighton Real Estate - <span
+                                            class="space-mono-regular-italic">Back End Developer</span></h5>
                                     <img src="assets/dropdown.svg" alt="dropdown" class="dropdown-btn">
                                 </button>
                                 <p id="brighton_exp_penjelasan" class="penjelasan mt-2">
-                                    <span class="kanit-light-italic">September 2024 - Present</span><br>
+                                    <span class="space-mono-regular-italic">September 2024 - Present</span><br>
                                     <a class="text-background-shadow" href="https://www.brighton.co.id/"
                                         target="_blank">
                                         Brighton Real Estate
@@ -355,7 +98,7 @@
                                     buying, selling, and renting residential and commercial properties. With a strong
                                     presence in Indonesia, Brighton offers professional real estate services, market
                                     insights, and expert guidance to help clients make informed property decisions.<br>
-                                    <span class="kanit-italic">Tech used: <span
+                                    <span class="space-mono-regular-italic">Tech used: <span
                                             class="text-background-shadow">PHP</span>, <span
                                             class="text-background-shadow">SQL</span>, <span
                                             class="text-background-shadow">HTML</span>, <span
@@ -370,20 +113,20 @@
                         <div class="row">
                             <div class="col-11">
                                 <button class="dropdown-box container-box py-3 mt-3 col-12" id="ubs_exp">
-                                    <h5 class="dropdown-left kanit-regular">PT Untung Bersama Sejahtera - <span
-                                            class="kanit-light-italic">Software Engineer</span></h5>
+                                    <h5 class="dropdown-left space-mono-regular">PT Untung Bersama Sejahtera - <span
+                                            class="space-mono-regular-italic">Software Engineer</span></h5>
                                     <img src="assets/dropdown.svg" alt="dropdown" class="dropdown-btn">
                                 </button>
                                 <p id="ubs_exp_penjelasan" class="penjelasan mt-2">
-                                    <span class="kanit-light-italic">July 2023 - June 2024</span><br>
+                                    <span class="space-mono-regular-italic">July 2023 - June 2024</span><br>
                                     <a class="text-background-shadow" href="https://ubslifestyle.com/" target="_blank">
                                         UBSGold
                                     </a> <img class="external-link" src="assets/external-link.svg" width="16"
                                         height="16" alt="" aria-hidden="true"> is a leading precious metals brand in
                                     Indonesia, specializing in the production and sale of high-quality gold bars and
                                     jewelry. Known for its purity and craftsmanship, UBSGold offers a trusted investment
-                                    option for individuals looking to buy gold for savings, investment, or personal use.
-                                    <span class="kanit-italic">Tech used: <span
+                                    option for individuals looking to buy gold for savings, investment, or personal use.<br>
+                                    <span class="space-mono-regular-italic">Tech used: <span
                                             class="text-background-shadow">Pascal</span>,<span
                                             class="text-background-shadow"> Delphi</span>,<span
                                             class="text-background-shadow"> PHP</span>, <span
@@ -410,17 +153,17 @@
         </div>
 
         <!-- Skill/Tech -->
-        <div class="row kanit-light fade-in-out">
+        <div class="row space-mono-regular fade-in-out">
             <div class="col-11 col-md-8 container-box mx-auto mt-5 px-5 py-3">
                 <div class="row">
                     <div class="col-12">
-                        <h1 class="kanit-bold">Skills 🛠️</h1>
+                        <h1 class="space-mono-bold">Skills 🛠️</h1>
                     </div>
                 </div>
                 <!-- HTML, CSS -->
                 <div class="row">
                     <div class="col-12 col-md-6">
-                        <p class="kanit-semibold text-background-shadow container-box py-2 px-3">
+                        <p class="space-mono-regular text-background-shadow container-box py-2 px-3">
                             <svg stroke="currentColor" fill="currentColor" stroke-width="0" role="img"
                                 viewBox="0 0 24 24" class="global-class-name" height="1.75em" width="1.75em"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -433,7 +176,7 @@
                         </p>
                     </div>
                     <div class="col-12 col-md-6">
-                        <p class="kanit-semibold text-background-shadow container-box py-2 px-3">
+                        <p class="space-mono-regular text-background-shadow container-box py-2 px-3">
                             <svg stroke="currentColor" fill="currentColor" stroke-width="0" role="img"
                                 viewBox="0 0 24 24" class="global-class-name" height="1.75em" width="1.75em"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -449,13 +192,13 @@
                 <!-- PHP, JAVASCRIPT -->
                 <div class="row">
                     <div class="col-12 col-md-6">
-                        <p class="kanit-semibold text-background-shadow container-box py-2 px-3">
+                        <p class="space-mono-regular text-background-shadow container-box py-2 px-3">
                             <img src="assets/php-logo.svg" alt="" style="height: 0.8em;">
                             PHP
                         </p>
                     </div>
                     <div class="col-12 col-md-6">
-                        <p class="kanit-semibold text-background-shadow container-box py-2 px-3">
+                        <p class="space-mono-regular text-background-shadow container-box py-2 px-3">
                             <svg stroke="currentColor" fill="currentColor" stroke-width="0" role="img"
                                 viewBox="0 0 24 24" class="global-class-name" height="1.75em" width="1.75em"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -471,7 +214,7 @@
                 <!-- SQL, CodeIgniter -->
                 <div class="row">
                     <div class="col-12 col-md-6">
-                        <p class="kanit-semibold text-background-shadow container-box py-2 px-3">
+                        <p class="space-mono-regular text-background-shadow container-box py-2 px-3">
                             <svg stroke="currentColor" fill="currentColor" stroke-width="0" role="img"
                                 viewBox="0 0 24 24" class="global-class-name" height="1.75em" width="1.75em"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -484,7 +227,7 @@
                         </p>
                     </div>
                     <div class="col-12 col-md-6">
-                        <p class="kanit-semibold text-background-shadow container-box py-2 px-3">
+                        <p class="space-mono-regular text-background-shadow container-box py-2 px-3">
                             <img src="assets/codeigniter-svgrepo-com.svg" style="filter:brightness(0); height: 1.75em;"
                                 alt="">
                             Codeigniter
@@ -494,7 +237,7 @@
                 <!-- Git, Silverstripe -->
                 <div class="row">
                     <div class="col-12 col-md-6">
-                        <p class="kanit-semibold text-background-shadow container-box py-2 px-3">
+                        <p class="space-mono-regular text-background-shadow container-box py-2 px-3">
                             <svg stroke="currentColor" fill="currentColor" stroke-width="0" role="img"
                                 viewBox="0 0 24 24" class="global-class-name" height="1.75em" width="1.75em"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -507,7 +250,7 @@
                         </p>
                     </div>
                     <div class="col-12 col-md-6">
-                        <p class="kanit-semibold text-background-shadow container-box py-2 px-3">
+                        <p class="space-mono-regular text-background-shadow container-box py-2 px-3">
                             <img src="assets/silverstripe-svgrepo-com.svg" style="filter:brightness(0); height: 1.75em;"
                                 alt="">
                             Silverstripe
@@ -518,11 +261,11 @@
         </div>
 
         <!-- Contact Me -->
-        <div class="row kanit-light fade-in-out mb-5">
+        <div class="row space-mono-regular fade-in-out mb-5">
             <div class="col-11 col-md-8 container-box mx-auto mt-5 px-5 py-3">
                 <div class="row">
                     <div class="col-12">
-                        <h1 class="kanit-bold text-center">Contacts</h1>
+                        <h1 class="space-mono-bold text-center">Contacts</h1>
                     </div>
                 </div>
                 <div class="row">
@@ -590,51 +333,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
 
-    <script>
-        $(document).ready(function () {
-            $("#clickMe").click(function () {
-                $("#message").text("Button clicked!");
-            });
-        });
-        // Animation Fade in Out
-        $(document).ready(function () {
-            $("#brighton_exp_penjelasan").hide();
-            $(".penjelasan").hide();
-            function checkVisibility() {
-                $(".fade-in-out").each(function () {
-                    var elementTop = $(this).offset().top;
-                    var elementBottom = elementTop + $(this).outerHeight();
-                    var viewportTop = $(window).scrollTop();
-                    var viewportBottom = viewportTop + $(window).height();
-
-                    if (elementBottom > viewportTop && elementTop < viewportBottom) {
-                        $(this).addClass("visible");
-                    } else {
-                        $(this).removeClass("visible");
-                    }
-                });
-            }
-
-            $(window).on("scroll resize", checkVisibility);
-            checkVisibility(); // Run on page load
-
-            // custom JS
-            function renderSite(url) {
-                $("#website_preview").attr("src", url);
-
-            }
-            $("#brighton_exp").click(function () {
-                $(".penjelasan").hide();
-                renderSite("https://www.brighton.co.id");
-                $("#brighton_exp_penjelasan").toggle();
-            });
-            $("#ubs_exp").click(function () {
-                $(".penjelasan").hide();
-                renderSite("https://ubslifestyle.com/");
-                $("#ubs_exp_penjelasan").toggle();
-            });
-        });
-    </script>
+    <script src="custom.js"></script>
 
 </body>
 
