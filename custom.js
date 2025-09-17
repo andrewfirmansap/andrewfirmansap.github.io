@@ -1,3 +1,9 @@
+$("#kobin_exp_penjelasan").hide();
+$("#kobin_exp").click(function () {
+    $(".penjelasan").hide();
+    $("#website_preview").attr("src", "https://kobin.co.id");
+    $("#kobin_exp_penjelasan").toggle();
+});
 
 $(document).ready(function () {
     $("#clickMe").click(function () {
